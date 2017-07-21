@@ -1,6 +1,6 @@
 # README #
 
-Blackbox is a web automation framework written in Java using Selenium WebDriver and JUnit.
+Blackbox is a web automation framework written in Java using Selenium WebDriver and TestNG.
 
 ## Prerequisites ##
 
