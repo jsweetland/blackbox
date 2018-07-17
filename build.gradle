@@ -8,7 +8,7 @@ targetCompatibility = 1.8
 
 tasks.withType(Test) {
 	systemProperty 'blackbox.environment', System.getProperty('blackbox.environment', 'default')
-	systemProperty 'blackbox.browser', System.getProperty('blackbox.browser', 'firefox')
+	systemProperty 'blackbox.browser', System.getProperty('blackbox.browser', 'chrome')
 }
 
 
