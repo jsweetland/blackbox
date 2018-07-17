@@ -1,7 +1,7 @@
 package com.blackbox.siteSpecific.tests.smoke;
 
 import com.blackbox.siteSpecific.framework.base.SiteTest;
-import org.testng.annotations.Test;
+import org.junit.Test;
 
 
 public class PageAccessTest extends SiteTest {
