@@ -10,8 +10,8 @@ import org.openqa.selenium.firefox.FirefoxProfile;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.net.PortProber;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeTest;
+import org.junit.After;
+import org.junit.Before;
 
 
 public abstract class SiteTest {
@@ -25,7 +25,7 @@ public abstract class SiteTest {
     public static final int rowIndexToValidateTablePopulation = 1;
     public String performanceTestResultsFilePath;
 	
-	@BeforeTest
+	@Before
 	public void testFrameworkSetup() {
 		browserCapabilities.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 		browserPort = Integer.toString(PortProber.findFreePort());
@@ -42,7 +42,7 @@ public abstract class SiteTest {
         performanceTestResultsFilePath = "./performance_test_results";
 	}
 
-	@AfterTest
+	@After
 	public void testFrameworkTearDown() {
 		mySite.quit();
 	}
