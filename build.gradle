@@ -24,7 +24,7 @@ dependencies {
 sourceSets {
 	test {
 		java {
-			srcDir 'src/main/java/com/'
+			srcDir 'src/main/java/'
 		}
 	}
 }
