@@ -1,6 +1,6 @@
 # README #
 
-Blackbox is a web automation framework written in Java using Selenium WebDriver and TestNG.
+Blackbox is a web automation framework written in Java using Selenium WebDriver and JUnit.
 
 ## Prerequisites ##
 
@@ -10,4 +10,4 @@ The very latest versions of Firefox are usually not yet supported by WebDriver. 
 
 ### Running Tests in Google Chrome ###
 
-You will need to download the [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) in order for the WebDriver to be able to attach to a Chrome instance.
+You will need to download the [ChromeDriver](https://sites.google.com/a/chromium.org/chromedriver/downloads) in order for the WebDriver to be able to attach to a Chrome instance. The tests expect to find the binary at /opt/chromedriver.
